@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nomor HP"
+        android:inputType="number"/>
+<EditText
+    android:id="@+id/et_pesan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Pesan"
+     />
+
+
+<EditText
+    android:id="@+id/et_token"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Main Api Token"
+    android:inputType="textPersonName" />
+
+
+<Button
+    android:layout_margin="10dp"
+    android:id="@+id/bt_signup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="makePostRequest"
+    android:text="POST REQUEST" />
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/bt_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="APIRegist"
+        android:text="Register MainAPI.net" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARI DATA PRODUK HALAL(TERDAFTAR DI MUI)"
+        android:textColorLink="@color/cardview_dark_background"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan data produk"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/bt_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makeGetRequest"
+        android:text="GET REQUEST" />
+
+
+</LinearLayout>
